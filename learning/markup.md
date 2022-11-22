@@ -28,7 +28,8 @@ https://github.com/nataliarusu/a11y
   https://github.com/fac26/Natalia-Laura-Konstantina-Team/commit/1fb3c53de112ecb5f81829d8a76ab03e39247c30
 
 ## 4. Ensure our UI has sufficient colour contrast so that everyone can perceive it comfortably
-  using Lighthouse developer tool on the browser 
+  Lighthouse developer tool on the browser 
+  <img src="./img/lighthouse.png" alt="image shows lighthouse output after analyzing the site" >
 
 ## 5. Use various tools to check that a website meets accessibility criteria
   https://github.com/fac26/Natalia-Laura-Konstantina-Team/commit/8a22ce6a2014dd2122dd7bc495f57075b115ccd5
