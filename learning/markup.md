@@ -2,8 +2,27 @@
 
 ## 1. Structure a site using semantic HTML to aid accessibility
   https://github.com/nataliarusu/a11y
+  When we write semantically correct HTML, we're letting the browser know what type of content it's dealing with and how that content relates to other content. 
+    
+    <img
+      width="220"
+      height="330"
+      src="https://www.notion.so/image/https%3A%2F%2Fcdn.diffords.com%2Fcontrib%2Fstock-images%2F2019%2F07%2F5d35db08cfe6f.jpg?table=block&id=1684553e-32ce-4dae-bf74-699aa9d27a4e&width=600&userId=6828a602-f8be-490a-97b7-ad3cf723003b&cache=v2"
+      alt="Old Fashioned 2 oz, A short tumbler of dark amber liquid, with a big chunk of perfectly clear ice and a strip of bright orange peel"
+      />
+      
 
 ## 2. Make a web page more readable for screen readers
+https://github.com/nataliarusu/a11y
+  We learned
+  - we should avoid “click here” links or vague link names. Screen-reader users often use a keyboard shortcut to list all the links on a page. In such a list, the links have no surrounding text, so it’s important to make your link names descriptive. 
+
+    <a href="https://www.diffordsguide.com/cocktails/recipe/4258/old-friend">
+      <h3>Old Friend</h3>
+    </a>
+    
+    
+ - use headings (Heading 2, Heading 3, and so on). A person who can’t see your headings can’t discern their relationship to surrounding content based on visual cues such as type size. To structure our information hierarchically, we should use headings in order.
 
 ## 3. Design a UI without relying solely on colour, so that we don’t exclude colour-blind users
   https://github.com/fac26/Natalia-Laura-Konstantina-Team/commit/1fb3c53de112ecb5f81829d8a76ab03e39247c30
