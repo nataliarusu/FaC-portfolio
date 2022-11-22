@@ -1,9 +1,10 @@
 # Markup portfolio
 
 ## 1. Structure a site using semantic HTML to aid accessibility
-  https://github.com/nataliarusu/a11y
-  When we write semantically correct HTML, we're letting the browser know what type of content it's dealing with and how that content relates to other content. 
-    
+  https://github.com/nataliarusu/a11y <br>
+  When we write semantically correct HTML, we're letting the browser know what type of content it's dealing with and how that content relates to other content. Elements like div and span are for layout only. They’re semantically meaningless, they don’t have keyboard or touch support in any browser, and they don’t communicate anything to the accessibility API. For example, we should never use a div or span for a button when we could use a semantically meaningful button element.
+When a screen-reader encounters an image, it will say “graphic” or “image” and then read the image’s alternative (“alt”) text. We should include descriptive alt text for all images, describing the image specifically but briefly. If we must use an image that has a lot of text in it, we should repeat the text in a caption below the image.   
+  
     <img
       width="220"
       height="330"
@@ -13,19 +14,21 @@
       
 
 ## 2. Make a web page more readable for screen readers
-https://github.com/nataliarusu/a11y
+[https://github.com/nataliarusu/a11y](https://github.com/nataliarusu/a11y/blob/main/index.html]
   We learned
   - we should avoid “click here” links or vague link names. Screen-reader users often use a keyboard shortcut to list all the links on a page. In such a list, the links have no surrounding text, so it’s important to make your link names descriptive. 
 
-    <a href="https://www.diffordsguide.com/cocktails/recipe/4258/old-friend">
-      <h3>Old Friend</h3>
-    </a>
+    <code>< a href="https://www.diffordsguide.com/cocktails/recipe/4258/old-friend">
+       <  h3  >Old Friend< /h3 >
+    < /a ></code>
+      
     
-    
- - use headings (Heading 2, Heading 3, and so on). A person who can’t see your headings can’t discern their relationship to surrounding content based on visual cues such as type size. To structure our information hierarchically, we should use headings in order.
+ - we should use one h1 per page, matching the page title and do not skip heading levels when increasing, but we can skip levels when decreasing (h1, h2, h3, h2, h3, h4, h2, h3, h4).
+ - underline links. Someone with monochromacy wouldn’t be able to differentiate between text and anchor text at all and would have to hover over the text to see if it their cursor changes to a pointer. 
 
 ## 3. Design a UI without relying solely on colour, so that we don’t exclude colour-blind users
   https://github.com/fac26/Natalia-Laura-Konstantina-Team/commit/1fb3c53de112ecb5f81829d8a76ab03e39247c30
+         
 
 ## 4. Ensure our UI has sufficient colour contrast so that everyone can perceive it comfortably
   Lighthouse developer tool on the browser 
