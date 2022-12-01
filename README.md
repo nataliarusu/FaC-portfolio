@@ -3,5 +3,5 @@
 ## Topics
 
 1. [Markup](../main/learnings/markup.md)
-2. [HTTP](../main/learnings/http.md)
+2. [HTTP](https://github.com/nataliarusu/FaC-portfolio/blob/main/learning/http.md)
 3. [Testing](../main/learnings/testing.md)
