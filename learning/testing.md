@@ -1,5 +1,15 @@
 #Testing
 
+Our project for this week was to build a to-do list tracker. It should allow users to create, complete and delete tasks from a list.<br>
+We needed to fill in the body to create a failing test for each story. After passing the tests, when we add features to our application, we have to write additional tests to cover the rest of your code.
+
+What we've built:<br>
+GitHub repository https://github.com/fac26/TDD-To-do-Natalia-Gareth <br>
+GitHub Pages https://fac26.github.io/TDD-To-do-Natalia-Gareth/<br>
+
+Screenshot of a ToDo project built with TDD<br>
+<img src="./img/todo.png" alt="ToDo project screenshot"/>
+
 ## 1.Check that passing a given input into our tests returns the expected output
 
         test('addToDoItem("handle event listener") should add item to ToDoList array', ()=>{
@@ -180,3 +190,5 @@ The variable toDoListDOM is a global scoped variable therefore it is visible ins
                 max-width: 50%;
             }
          }
+
+
