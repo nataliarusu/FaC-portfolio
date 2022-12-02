@@ -38,30 +38,42 @@ When a screen-reader encounters an image, it will say “graphic” or “image�
   <img src="./img/lighthouse.png" alt="image shows lighthouse output after analyzing the site" >
 
 ## 5. Use various tools to check that a website meets accessibility criteria
-  https://github.com/fac26/Natalia-Laura-Konstantina-Team/commit/8a22ce6a2014dd2122dd7bc495f57075b115ccd5
+
+  We used the Lighthouse developer tool on the browser which has audits for performance, accessibility, progressive web apps, SEO and more. We haven't used the axe DevTools but we are aware of Web Accessibility Testing extensions for browsers. For example:<br>
+  axe DevTools - Web Accessibility Testing extention for chrome<br>
+  https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd
 
 ## 6. Ensure a website displays well on screens of different sizes
 
-    @media screen and (max-width: 480px) {
-      #team > * + * {
-        max-width: 100%;
-      }
-      }
-    @media screen and (max-width: 600px) {
-     footer span {
-      .slideshow-container {
-        width: 100vw;
-      }
-      .team-member{
-        flex-direction: column;
-      }
-    }
+<img src="./img/screens.png" alt ="screenshot of main page on different screen sizes"/>
+
+In this project, we use @media queries:
+
+
+    @media screen and (max-width: 480px)
+    @media screen and (max-width: 600px) 
+    @media screen and (max-width: 768px)
   
 
 ## 7. Use CSS media queries to ensure content is always presented effectively 
   https://github.com/fac26/Natalia-Laura-Konstantina-Team/commit/481f2566942267f8f1e2a690ada28e0aa3c65cb8
 
+
+      @media screen and (max-width: 480px) {
+        #team > * + * {
+          max-width: 100%;
+        }
+        }
+      @media screen and (max-width: 600px) {
+        .team-member{
+          flex-direction: column;
+        }
+      }
+
+
 ## 8. Demonstrate a mobile-first approach to designing a website with a great user experience
+
+Although we didn't build the website using the mobile-first approach, the code snippet below shows how we use the mobile-first approach in the second project.<br>
   https://github.com/fac26/Dominic_Natalia_http/blob/main/style.css
   
     #form-search-country input,
