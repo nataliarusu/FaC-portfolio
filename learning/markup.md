@@ -27,7 +27,10 @@ When a screen-reader encounters an image, it will say “graphic” or “image�
  - underline links. Someone with monochromacy wouldn’t be able to differentiate between text and anchor text at all and would have to hover over the text to see if it their cursor changes to a pointer. 
 
 ## 3. Design a UI without relying solely on colour, so that we don’t exclude colour-blind users
-  https://github.com/fac26/Natalia-Laura-Konstantina-Team/commit/1fb3c53de112ecb5f81829d8a76ab03e39247c30
+  We used website tool to check colour clindness simulator on our website chttps://pilestone.com/pages/color-blindness-simulator-1 <br>
+  
+  We checked all types of color blindness. There are eight types to experiment with under the four categories of color blindness: deutan, protan, tritan, and black/white. All tests showed no issues for blindness users to see the page. <br>
+<img src="./img/colour.png" alt="screenshot of experimental testing colour blindness" >
          
 
 ## 4. Ensure our UI has sufficient colour contrast so that everyone can perceive it comfortably
