@@ -81,13 +81,52 @@ Promises are extremely powerful for handling asynchronous operations in JavaScri
         });
     };
 
-9. Configure the options argument of the fetch method to make GET and POST requests
-10. Use the map array method to create a new array containing new values
-11. Use the filter array method to create a new array with certain values removed
-12. Access DOM nodes using a variety of selectors
-13. Add and remove DOM nodes to change the content on the page
-14. Toggle the classes applied to DOM nodes to change their CSS properties
-15. Use consistent layout and spacing
-16. Follow a spacing guideline to give our app a consistent feel
-17. Debug client side JS in our web browser
-18. Usr console.log() to help us debug our code
+## 5. Configure the options argument of the fetch method to make GET and POST requests
+
+        function sendRequest(url, method, data){    
+            //second arg in fetch function is object where we set method POST or other methods, GET is default, we don't need to configure
+            return fetch(url, {
+                method:method, //method from sendRequest assign to method in this obj parameter
+                body: JSON.stringify(data), //data from sendRequest we convert to JSON data by  JSON.stringify() 
+                //in body data we send and it depends on server accept, can be file, binary, formData...
+                header: {
+                    'Content-Type': 'application/json'//tell API we have json data
+                }
+
+
+        }).then(response =>{//we get our response obj from fetch as promise
+            if(!response.ok){//!ok - means not 200 to 299
+                throw new Error('not 200-299');
+            }
+            return response.json();//convert stream to json
+            //it not just JSON.parse(), it also turns srteamed body(we have it on response obj) into snapshot
+            //we need to call respone.json() to convert response body streamed unparsed body to snapshot parsed body
+        }).catch(err =>{alert(err)});  
+        }
+        
+        
+## 6. Use the map array method to create a new array containing new values
+        
+        const updatedData = data.map(el=> el + ' countries population');
+
+## 7. Use the filter array method to create a new array with certain values removed
+
+        const smallPopulationCountries = data.filter(country=> country.population < 200000);
+
+## 8. Access DOM nodes using a variety of selectors
+
+        const form = document.querySelector('#form-search-country');
+        const redishEls = document.querySelectorAll('.red');
+        const nameEl = document.getElementById('country-name');
+        const li = document.querySelector("[id='1234']");
+       
+
+## 9. Add and remove DOM nodes to change the content on the page
+
+
+
+## 10. Toggle the classes applied to DOM nodes to change their CSS properties
+## 12. Use consistent layout and spacing
+## 13. Follow a spacing guideline to give our app a consistent feel
+## 14. Debug client side JS in our web browser
+## 15. Use console.log() to help us debug our code
