@@ -4,6 +4,7 @@ This project was built with @DominicSimpson<br>
 Our project https://github.com/fac26/Dominic_Natalia_http<br>
 See in action https://fac26.github.io/Dominic_Natalia_http/<br>
 World GeoData allows a user to search a country's data and provides upon request the data about the country: area, population, language, capital, currencies, borders etc.
+<img src="./img/http2.png" alt="flexbox representation">
 
 <hr>
 
@@ -169,6 +170,7 @@ Promises are extremely powerful for handling asynchronous operations in JavaScri
               }
             };
 
+
 ## 10. Toggle the classes applied to DOM nodes to change their CSS properties
 
         const renderInvalidMessage = (message) => {
@@ -228,3 +230,4 @@ For debugging  we used a browser developer tool, console log, and we added break
 ## 14. Use console.log() to help us debug our code
 
 We have used console.log(data) to help us understand the data we are getting from the database and how we can process the data and display it to the user.
+<img src="./img/http3.png" alt="console.log representation">
